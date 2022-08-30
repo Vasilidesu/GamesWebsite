@@ -1,0 +1,166 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FAFAFA;
+  background-image: url("media/background.png");
+  background-size: 1000px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.slides {
+  animation: fading 10s infinite;
+  }
+
+  @keyframes fading {
+    0%{opacity:0}45%{opacity:1}100%{opacity:0}
+  }
+
+header {
+  min-height: 300px;
+  background-color: black;
+}
+
+header img {
+  width: calc(100%);
+}
+
+#sidenav {
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1f1f1f;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+#sidenav img {
+  height: 30px;
+  padding: 0 10px;
+}
+
+#sidenav a {
+  padding: 15px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FAFAFA;
+  display: block;
+}
+
+
+
+#sidenav a:hover {
+  color: #318dde;
+  background-color: #363636;
+  transition: all 0.2s;
+}
+
+#sidenav a:hover img {
+  filter: invert(48%) sepia(62%) saturate(659%) hue-rotate(166deg) brightness(94%) contrast(84%);
+}
+
+.main {
+  margin-left: 250px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff00;
+  font-size: 2.5em;
+  margin: 50px 0 80px;
+}
+
+h1 img {
+  height: 100px;
+  margin: 0 20px;
+}
+
+
+h2 {
+  color: #ffff00;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.info {
+  max-width: 50em;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #225e94;
+  color: white;
+  border-radius: 50px 15px;
+}
+
+.info-content {
+  font-size: 1.3em;
+  padding: 30px;
+}
+
+.info-content p {
+  margin-bottom: 40px;
+}
+
+#navbtn {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+#navbtn:hover {
+  color: #318dde;
+}
+
+
+
+.info {
+  display: flex;
+}
+
+figure img {
+  display: block;
+  margin: 80px auto 0;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #18456e;
+
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+footer {
+  height: 3em;
+  width: auto;
+  background-color: #1f1f1f;
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  justify-content: center;
+  color: #FAFAFA;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
